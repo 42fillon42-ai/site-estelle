@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estellevasquezgirodetpsy.netlify.app/sitemap.xml
