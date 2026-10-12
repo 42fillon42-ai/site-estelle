@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://estellevasquezgirodetpsy.netlify.app/sitemap.xml
+Sitemap: https://estellevasquezgirodetpsy.pages.dev/sitemap.xml

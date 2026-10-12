@@ -1,0 +1,11 @@
+# Le site est hébergé sur Cloudflare Pages depuis le 12/10/2026.
+# Netlify ne sert plus que de redirection permanente vers la nouvelle adresse,
+# pour les liens déjà partagés et pour la bascule côté Google.
+# Ne jamais mettre ces règles dans un fichier _redirects : Cloudflare Pages lit
+# ce format lui aussi, et le site se redirigerait en boucle sur lui-meme.
+
+[[redirects]]
+  from = "/*"
+  to = "https://estellevasquezgirodetpsy.pages.dev/:splat"
+  status = 301
+  force = true
