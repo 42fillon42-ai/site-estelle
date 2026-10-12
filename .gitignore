@@ -14,3 +14,12 @@
 
 # Claude Code (settings locaux)
 .claude/
+
+# === Fichiers de travail, jamais publiés ===
+# Le dépôt est PUBLIC et Cloudflare Pages sert sa racine telle quelle : tout
+# fichier versionné ici est téléchargeable depuis le site du cabinet. Les notes
+# internes et la correspondance restent donc hors de git. Elles continuent
+# d'être sauvegardées par le miroir Google Drive.
+CLAUDE.md
+boite-idees.md
+courriers/
