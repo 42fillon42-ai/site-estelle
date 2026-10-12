@@ -38,7 +38,7 @@ L'authentification GitHub est stockée dans le trousseau macOS (osxkeychain), vi
 
 ## Points d'attention
 
-- Le formulaire de contact (`handleSubmit` dans `script.js`) **n'envoie rien** — il affiche uniquement un message de confirmation côté client. Toute évolution vers un envoi réel nécessite un backend ou un service tiers (Netlify Forms, Formspree…).
+- Le formulaire de contact (`handleSubmit` dans `script.js`) **ne passe par aucun serveur** : il compose un lien `mailto:` vers `estellevasquez42@gmail.com` et laisse la visiteuse envoyer depuis sa propre messagerie. Choix assumé le 12/10/2026 — une demande adressée à une psychologue peut contenir des données de santé, et rien ne doit transiter par un prestataire tiers. Un bloc de repli (adresse en clair + bouton de copie) s'affiche systématiquement après le clic, parce qu'on ne peut pas savoir si la messagerie s'est réellement ouverte. **Ne pas remplacer ça par Formspree ou Web3Forms sans en reparler à Cyrille.**
 - Les coordonnées (téléphone, email, adresse, tarifs, certifications) sont **en dur** dans `index.html` — toute modification métier passe par ce fichier.
 - Le JSON-LD `MedicalBusiness` dans `<head>` doit rester **synchronisé** avec ces coordonnées (adresse, géoloc 45.4397/4.3872, horaires, services, téléphone, email) — sinon Google verra des incohérences.
 - `netlify.toml` porte la redirection 301 de l'ancienne adresse. **Ne jamais la déplacer dans un fichier `_redirects`** : Cloudflare Pages lit ce format lui aussi, et le site se redirigerait en boucle.

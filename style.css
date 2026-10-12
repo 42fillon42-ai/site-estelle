@@ -318,6 +318,25 @@ h2 em { font-style: italic; color: var(--teal); }
 .form-group select { cursor: pointer; }
 
 .form-confirm { font-family: sans-serif; font-size: 0.9rem; color: var(--olive); font-weight: bold; }
+.form-confirm:not(:empty) { margin-top: 1.1rem; }
+.form-confirm p { font-weight: normal; color: var(--text); line-height: 1.6; }
+.form-fallback-mail {
+  margin-top: 0.5rem;
+  font-weight: bold !important;
+  color: var(--teal-dark) !important;
+  word-break: break-all;
+  user-select: all;
+}
+.btn-copier {
+  display: inline-block; margin-top: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  background: var(--teal); color: var(--white);
+  border: none; border-radius: 50px; cursor: pointer;
+  font-family: sans-serif; font-size: 0.85rem; font-weight: bold;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-copier:hover { background: var(--teal-dark); transform: translateY(-1px); }
 
 /* === FOOTER === */
 footer {
